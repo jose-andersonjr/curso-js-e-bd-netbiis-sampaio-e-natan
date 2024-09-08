@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário de Contato</h1>
+    <form action="#">
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome completo" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Digite seu email">
+        </div>
+        <div>
+            <label for="nome">Telefone:</label>
+            <input type="text" name="nome" placeholder="Digite seu telefone" />
+        </div>
+        <div>
+            <input type="radio" name="sexo" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+        </div>
+        <div>
+            <label for="opcoes">Área de Interesse:</label>
+            <select id="area" name="area">
+                <option value="desenvolvimento">Desenvolvimento</option>
+                <option value="marketing">Marketing</option>
+                <option value="arquitetura">Arquitetura</option>
+            </select>
+        </div>
+        <div>
+            Preferências de Contato:
+            <input type="checkbox" name="email" id="email">
+            <label for="email">Email</label>
+            <input type="checkbox" name="telefone" id="telefone">
+            <label for="telefone">Telefone</label>
+            <input type="checkbox" name="sms" id="sms">
+            <label for="sms">SMS</label>
+        </div>
+        <div>
+            Mensagem:
+            <textarea name="Mensagem" id="Mensagem" placeholder="Escreva sua mensagem aqui"></textarea>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>
