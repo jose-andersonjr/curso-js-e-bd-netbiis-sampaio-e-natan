@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <link rel="stylesheet" href="../static/css/forms.css">
+    <script src="../static/js/forms.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Formulário de Contato</h2>
+        <form action="./formulario-enviado.html">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" class="form-field" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form-field" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" class="form-field" name="telefone" required maxlength="14"
+                    placeholder="(XX) X XXXX - XXXX">
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <div class="label-group"><input type="radio" name="sexo" value="masculino" id="masculino" />
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" value="feminino" id="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="area-interesse">Área de Interesse:</label>
+                <select id="area-interesse" class="form-field" name="area-interesse" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="programacao">Programação</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="vendas">Vendas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="contato">Preferências de Contato:</label>
+                <div class="label-group">
+                    <input type="checkbox" name="contato" value="email">
+                    <label for="email">Email</label>
+                    <input type="checkbox" name="contato" value="telefone">
+                    <label for="telefone">Telefone</label>
+                    <input type="checkbox" name="contato" value="sms">
+                    <label for="sms">SMS</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" class="form-field" name="mensagem" rows="4"
+                    placeholder="Escreva sua mensagem aqui" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="form-button">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
