@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+    <link rel="stylesheet" href="../static/css/pizzaria.css">
+    <script src=".././static/js/pizzaria.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>PIZZARIA</h1>
+        <form action="#">
+            <div class="form-group">
+                <label for="valorConta">Insira o valor da conta: </label>
+                <input type="text" id="valorConta" name="valorConta" required>
+            </div>
+            <div class="form-group">
+                <label for="numeroClientes">Insira a quantidade de clientes:</label>
+                <input type="number" id="numeroClientes" name="numeroClientes" required>
+            </div>
+            <button type="button" id="button-calcular">Calcular</button>
+        </form>
+        <div id="resultado">
+            Cada pessoa deve pagar: <strong id="valorPorPessoa"></strong>
+        </div>
+        </p>
+    </div>
+</body>
+</html>

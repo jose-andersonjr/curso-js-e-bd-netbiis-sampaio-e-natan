@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular valor do jantar</title>
+    <script>
+        // Função que calcula e exibe o valor com 10% de aumento
+        function adicionarTaxa() {
+            let valor = parseFloat(document.getElementById('valorReais').value);
+            if (isNaN(valor)) {
+                alert("Por favor, insira um valor válido");
+                return;
+            } 
+            let valorComAumento = valor * 1.10;
+            document.getElementById('taxa').innerText = "O valor da taxa foi: R$ " + valor*0.1;
+            document.getElementById('resultado').innerText = "Total da conta com 10%: R$ " + valorComAumento.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <div class="form-group">
+        <label for="valorReais">Digite o valor da conta (R$):</label>
+        <input type="number" id="valorReais" placeholder="0.00" step="0.01" min="0">
+    </div>
+    <button onclick="adicionarTaxa()">Adicionar 10%</button>
+    <p id="taxa"></p>
+    <p id="resultado"></p>
+
+</body>
+</html>
