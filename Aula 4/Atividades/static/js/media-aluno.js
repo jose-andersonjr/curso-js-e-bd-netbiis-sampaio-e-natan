@@ -12,7 +12,7 @@ if(button){
             console.log(nota2);
             console.log(nota3);
             console.log(nota4);
-            let media = ((nota1+nota2+nota3+nota4)/2).toFixed(2);
+            let media = ((nota1+nota2+nota3+nota4)/4).toFixed(2);
             resultado.textContent = media;
         }
     });
