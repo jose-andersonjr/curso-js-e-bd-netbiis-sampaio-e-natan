@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+</head>
+<body>
+    <h1 id="titulo" style="color: blue;">Nosso título</h1>
+    <p class="paragrafo">Nosso parágrafo</p>
+    <p class="paragrafo">Nosso parágrafo</p>
+
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <label for="checkbox">Checked</label>
+    <script>
+        // Selecionar elementos
+        let titulo = document.querySelector('#titulo');
+        let paragrafos = document.querySelectorAll('.paragrafo');
+        let paragrafosP = document.querySelectorAll('p');
+        let input = document.querySelector('[name="nome"]');
+        let checkbox = document.querySelector('[name="checkbox"]');
+
+        
+        titulo.innerText = 'Novo título';
+        console.log(titulo.textContent);
+
+        console.log(paragrafos[0]);
+        paragrafos[0].style.color = 'red';
+
+        console.log(paragrafosP[0]);
+
+
+        console.log(input);
+
+        // Acessando atributos dos elementos
+        console.log(titulo.innerHTML);
+        console.log(paragrafos[0].innerText);
+        console.log(titulo.style.color);
+        console.log(input.placeholder);
+        
+        titulo.innerText += ': Alterado';
+        paragrafos[0].innerText += ': Alterado';
+        input.value = 'Valor Padrão';
+
+        checkbox.checked = true;
+        console.log(checkbox.checked);
+    </script>
+</body>
+</html>
