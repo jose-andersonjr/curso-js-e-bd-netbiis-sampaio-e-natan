@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra com parcelamento</title>
+    <link rel="stylesheet" href="../static/css/compra-com-parcelamento.css">
+    <script src="../static/js/compra-com-parcelamento.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Loja no Natan</h2>
+        <div class="form-group">
+            <label for="valorProduto">Insira o valor do produto:</label>
+            <input type="text" name="valorProduto" id="valorProduto">
+        </div>
+        <div class="form-group">
+            <label for="formaPagamento">Escolha forma de pagamento: </label>
+            <select name="formaPagamento" id="formaPagamento">
+                <option disabled selected value> -- Opções de pagamento -- </option>
+                <option value="1">À vista no dinheiro ou pix</option>
+                <option value="2">À vista no cartão de crédito</option>
+                <option value="3">2x sem juros</option>
+                <option value="4">3x com juros</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <div id="resultado"></div>
+        </div>
+    </div>
+</body>
+
+</html>
