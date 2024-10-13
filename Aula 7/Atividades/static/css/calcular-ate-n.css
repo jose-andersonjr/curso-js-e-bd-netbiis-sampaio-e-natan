@@ -1,0 +1,42 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 20vh;
+    background-color: whitesmoke;
+    border-radius: 40px;
+}
+
+#title {
+    padding: 40px;
+    text-align: center;
+}
+
+.container-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    width: 80%;
+}
+
+input {
+    width: 20%;
+}

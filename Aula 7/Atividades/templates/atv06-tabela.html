@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar tabela automaticamente</title>
+    <script src="../static/js/tabela.js" defer></script>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Tabuada de Multiplicação</h2>
+        <table>
+            <div class="input-container">
+                <label for="numero">Insira o multiplicador: </label>
+                <input type="text" id="numero" name="numero" autocomplete="off">
+            </div>
+            <thead>
+                <tr>
+                    <th>Operação</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<body>
