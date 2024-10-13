@@ -24,6 +24,7 @@ const ulCandidatos = document.querySelector('#candidatos');
 
 function renderizarCandidatos() {
     ulCandidatos.innerHTML = '';
+    candidatos.sort((a, b) => b.votos - a.votos);
     candidatos.forEach(candidato => {
         ulCandidatos.innerHTML += `
             <li>
