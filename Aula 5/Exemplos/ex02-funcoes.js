@@ -13,6 +13,12 @@ function mensagemBoasVindas(){
     console.log('=======================================');
 }
 
-mensagemBoasVindas();
-console.log(calcularIMC(74, 1.70));
-console.log(somar(10, 20));
+function init(){
+    mensagemBoasVindas();
+    console.log(calcularIMC(74, 1.70));
+    console.log(somar(10, 20));
+}
+
+// init();
+
+module.exports = {mensagemBoasVindas, calcularIMC, somar};

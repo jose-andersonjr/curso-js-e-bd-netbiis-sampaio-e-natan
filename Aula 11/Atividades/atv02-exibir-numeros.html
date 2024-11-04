@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções com callback</title>
+</head>
+
+<body>
+
+    <script>
+
+        function exibirResultado(a, b, callback) {
+            let result = somar(a, b);
+            return callback(result);
+        }
+
+        function somar(a, b) {
+            a = Number(a);
+            b = Number(b);
+            return a + b;
+        }
+
+        let n1 = prompt('Insira o primeiro número: ');
+        let n2 = prompt('Insira o segundo número: ');
+        let option = prompt('Onde você quer o resultado? \n1.Console \n2.Janela \n3.Document');
+
+        switch (option) {
+            case '1':
+                exibirResultado(n1, n2, (resultado) => console.log(resultado));
+                break;
+            case '2':
+                exibirResultado(n1, n2, (resultado) => window.alert(resultado));
+                break;
+            case '3':
+                exibirResultado(n1, n2, (resultado) => document.write(resultado));
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>

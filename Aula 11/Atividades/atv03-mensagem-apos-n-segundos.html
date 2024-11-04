@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+</head>
+
+<body>
+    <input type="number" id="segundos" placeholder="Tempo em segundos">
+    <button onclick="iniciarContagem()">Iniciar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function iniciarContagem() {
+            const segundos = document.getElementById('segundos').value;
+            const mensagemElement = document.getElementById('mensagem');
+            let tempoRestante = segundos;
+
+            const intervalo = setInterval(() => {
+                mensagemElement.textContent = `Tempo restante: ${tempoRestante} segundos`;
+                tempoRestante--;
+
+                if (tempoRestante < 0) {
+                    clearInterval(intervalo);
+                    mensagemElement.textContent = 'Tempo esgotado!';
+                }
+            }, 1000); 
+        }
+    </script>
+</body>
+
+</html>
