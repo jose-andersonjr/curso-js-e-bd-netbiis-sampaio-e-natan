@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../static/css/atv01-login.css">
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h2 id="login__message">Login</h2>
+    <input type="text" id="user" placeholder="user" required>
+    <input type="password" id="password" placeholder="password" required>
+    <button onclick="doLogin()">Entrar</button>
+  </div>
+  <script>
+
+    function checkPreviousLogin(){
+      let user = sessionStorage.getItem('user');
+      let message = document.querySelector('#login__message');
+      let userInput = document.querySelector('#user');
+      if(user){
+        message.textContent = `Bem-vindo de volta ${user}`;
+        userInput.classList.add('hide');
+        userInput.value = user;
+      }
+    }
+
+    function doLogin() {
+      let user = document.querySelector('#user').value;
+      let password = document.querySelector('#password').value;
+
+      if(user && password){
+        sessionStorage.setItem('user', user);
+        sessionStorage.setItem('password', password);
+        location.assign('atv01-tela-bem-vindo.html');
+      }
+    }
+
+    checkPreviousLogin();
+
+  </script>
+</body>
+
+</html>

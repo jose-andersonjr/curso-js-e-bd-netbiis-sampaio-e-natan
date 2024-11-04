@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o Window</title>
+</head>
+<body>
+    <script>
+        window.alert('Olá Mundo alert!');
+        let confirma = window.confirm('Você confirma?');
+        console.log(confirm);
+        let nome = window.prompt('Qual é o seu nome?');
+        console.log(nome);
+
+        window.open('https://www.google.com.br', '_blank', 'width=800, height=600');
+
+        // window.close();
+
+        console.log('Largura da janela interna: ', +window.innerWidth);
+        console.log('Altura da janela interna: ', +window.innerHeight);
+        console.log('Largura da janela externa: ', +window.outerWidth);
+        console.log('Altura da janela externa: ', +window.outerHeight);
+
+        console.log(window.screen);
+        console.log('Largura da tela: ', +window.screen.width);
+        console.log('Altura da tela: ', +window.screen.height);
+        console.log('Largura da tela disponível: ', +window.screen.availWidth);
+        console.log('Altura da tela disponível: ', +window.screen.availHeight);
+        console.log('Profundidade de cor: ', +window.screen.colorDepth);
+
+        console.log(window.inneWidth);
+
+        window.resizeTo(500, 500);
+        window.moveTo(100, 100);
+
+    </script>
+</body>
+</html>
