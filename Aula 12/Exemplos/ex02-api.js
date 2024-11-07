@@ -92,38 +92,65 @@ export async function deletePost(id){
 
 }
 
-// getPosts().then(posts => {
-//     console.log(posts);
-// });
+getPosts().then(posts => {
+    console.log(posts);
+});
 
-// getPostById(1).then(post => {
-//     console.log(post);
-// });
+getPostById(1).then(post => {
+    console.log(post);
+});
 
-// getCommentsByPost(1).then(comments => {
-//     console.log(comments);
-// });
+getCommentsByPost(1).then(comments => {
+    console.log(comments);getPosts().then(posts => {
+        console.log(posts);
+    });
+    
+    getPostById(1).then(post => {
+        console.log(post);
+    });
+    
+    getCommentsByPost(1).then(comments => {
+        console.log(comments);
+    });
+    
+    createPost({
+        title: 'foo',
+        body: 'bar',
+        userId: 1
+    }).then(post => {
+        console.log(post);
+    });
+    
+    updatePost({
+        title: 'foo',
+        body: 'bar',
+        userId: 1
+    }).then(post => {
+        console.log(post);
+    });
+    
+    updatePostTitle(1, 'Novo titulo do post').then(post => {
+        console.log(post);
+    })
+    
+    deletePost(1).then(success => {
+        console.log(success);
+    });
+    console.log(post);
+});
 
-// createPost({
-//     title: 'foo',
-//     body: 'bar',
-//     userId: 1
-// }).then(post => {
-//     console.log(post);
-// });
+updatePost({
+    title: 'foo',
+    body: 'bar',
+    userId: 1
+}).then(post => {
+    console.log(post);
+});
 
-// updatePost({
-//     title: 'foo',
-//     body: 'bar',
-//     userId: 1
-// }).then(post => {
-//     console.log(post);
-// });
+updatePostTitle(1, 'Novo titulo do post').then(post => {
+    console.log(post);
+})
 
-// updatePostTitle(1, 'Novo titulo do post').then(post => {
-//     console.log(post);
-// })
-
-// deletePost(1).then(success => {
-//     console.log(success);
-// });
+deletePost(1).then(success => {
+    console.log(success);
+});
