@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem-vindo</title>
   <link rel="stylesheet" href="../static/css/atv01-login.css">
+  <script src="../static/js/tela-bem-vindo.js" defer></script>
 </head>
 
 <body>
@@ -15,26 +16,6 @@
     <p>Você fez login com sucesso.</p>
     <a href="atv01-tela-login.html" onclick="doLogout()">Sair</a>
   </div>
-  <script>
-    function checkLogin() {
-      let nome = sessionStorage.getItem('user');
-      let password = sessionStorage.getItem('password');
-
-      if (nome && password) {
-        let container = document.querySelector('.welcome-container');
-        container.classList.remove('hide');
-      } else {
-        location.assign('atv01-tela-login.html');
-      }
-    }
-
-    function doLogout(){
-      sessionStorage.clear();
-    }
-
-    checkLogin();
-    
-  </script>
 </body>
 
 </html>
