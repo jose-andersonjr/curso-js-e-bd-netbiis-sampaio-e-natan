@@ -1,0 +1,17 @@
+{
+  "alunos": [
+    {
+      "id": 2,
+      "nome": "José Anderson",
+      "dataNascimento": "2001-02-06",
+      "email": "jose.freitas@netbiis.com",
+      "notas": [
+        10,
+        9,
+        10
+      ]
+    }
+  ],
+  "cursos": [],
+  "professores": []
+}
