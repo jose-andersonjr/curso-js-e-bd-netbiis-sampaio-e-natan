@@ -1,0 +1,12 @@
+{
+  "candidatos": [
+    {
+      "nome": "João Matheus",
+      "partido": "Partido Z",
+      "numero": "10102",
+      "foto": "https://via.placeholder/150",
+      "id": 1731358176376,
+      "votos": 0
+    }
+  ]
+}
